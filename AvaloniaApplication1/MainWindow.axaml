@@ -3,22 +3,46 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" 
+		d:DesignWidth="800" 
+		d:DesignHeight="450"
         x:Class="AvaloniaApplication1.MainWindow"
         Title="TestProgect">
 
-	<Window.Resourses>
-		<!--лежат ресурсы для использования при верстке из вью модели-->
+	<Window.Resources>
+		<!-- Ресурсы для использования в разметке -->
 		
-	</Window.Resourses>
+	</Window.Resources>
 
 	<Window.Styles>
+		
 		<!--ОБЩИЕ СТИЛИ ДЛЯ ВЕРСТКИ МОЖНО ВЫНЕСТИ-->
 	</Window.Styles>
 
-	<DockPanel><!--панел для отображения всех элементов-->
+	<DockPanel LastChildFill="True">
+		<DockPanel DockPanel.Dock="Top" >
+			<!--панел для отображения всех элементов-->
+			<StackPanel Margin="5">
+				<TextBlock Margin="0 5">
+					Выберите город для прросмотра погоды
+					<Span FontWeight="Bold">сейчас</Span>
+				</TextBlock>
+				<AutoCompleteBox />
+			</StackPanel>
+		</DockPanel>
 		
-			<TextBlock>нАЗВАНЕИ</TextBlock>
+		<DockPanel LastChildFill="True" Margin="5 5">
+			<StackPanel >
+				<TextBlock>Все данные</TextBlock>
+			</StackPanel>
+
+			<StackPanel VerticalAlignment="Center"
+						HorizontalAlignment="Center">
+				<TextBlock Text="Данных нет"
+						   FontWeight="Bold"/>
+			</StackPanel>
+		</DockPanel>
 		
 	</DockPanel>
+	
 </Window>

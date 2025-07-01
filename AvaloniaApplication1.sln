@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.Models", "Avalonia.Models\Avalonia.Models.csproj", "{600FE42A-0CF6-4292-9B74-5B4E99AA74F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{A779CD4F-D91D-476A-8C88-15E652191222}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{600FE42A-0CF6-4292-9B74-5B4E99AA74F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{600FE42A-0CF6-4292-9B74-5B4E99AA74F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{600FE42A-0CF6-4292-9B74-5B4E99AA74F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A779CD4F-D91D-476A-8C88-15E652191222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A779CD4F-D91D-476A-8C88-15E652191222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A779CD4F-D91D-476A-8C88-15E652191222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A779CD4F-D91D-476A-8C88-15E652191222}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
